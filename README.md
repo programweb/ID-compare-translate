@@ -1,6 +1,17 @@
 # ID-compare-translate
 
 
+Classifying species of microorganisms by their genetic material is a fast-growing subfield of bioinformatics.
+&nbsp;
+
+&nbsp;
+
+--- --- --- _I PLAN TO ADD MORE TO THIS CODE SAMPLE IN THE NEAR FUTURE._ --- --- ---
+&nbsp;
+
+&nbsp;
+
+
 **Map related genes across species**
 &nbsp;
 
