@@ -20,7 +20,7 @@ The
 allows the user to map a list of genes (you can use gene-list.txt in this git repo) of interest to homologous genes in another related organism.
 
 Here is an example use: getting the gene ortholog names of the mouse genome using a list of Human genes.
-![top](https://github.com/programweb/ID-compare-translate/assets/12736699/458b4151-39df-4650-80a2-9ca3781842cd)
+![top](https://github.com/programweb/ID-compare-translate/assets/12736699/6eefa1bf-6e31-451d-ae79-316adc6e63fb)
 &nbsp;
 
 [some rows not shown]
@@ -28,4 +28,5 @@ Here is an example use: getting the gene ortholog names of the mouse genome usin
 
 &nbsp;
 
-![bottom](https://github.com/programweb/ID-compare-translate/assets/12736699/cbed767d-207d-4fe4-a917-2c17124552f9)
+![bottom](https://github.com/programweb/ID-compare-translate/assets/12736699/e8c870ff-474d-4042-a750-0672771c33be)
+
