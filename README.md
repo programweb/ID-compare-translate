@@ -4,9 +4,63 @@
 Classifying species of microorganisms by their genetic material is a fast-growing subfield of bioinformatics.
 &nbsp;
 
+I'll start by using blast to classify sequences of runs that attempt to connect the disease of Necrotizing enterocolitis a devastating complication of prematurity to microbial composition of the gut
+(using data from the Human Microbiome Project, HMP, Demonstration Projects that contain 1065 sequencing runs).
 &nbsp;
 
---- --- --- _I PLAN TO ADD MORE TO THIS CODE SAMPLE IN THE NEAR FUTURE._ --- --- ---
+FTP site for the data:  https://ftp.ncbi.nlm.nih.gov/blast/db/v5/
+&nbsp;
+
+First, I got all the SRR runs for the project (1065 runs in total):
+```BASH
+esearch -query PRJNA46337 -db sra | efetch -format runinfo > runinfo.csv
+```
+&nbsp;
+
+I investigated the file and saw that the first run id is SRR1614899. Next, I got the data for it. This command will produce 3 files –
+importantly SRR1614899_3.fastq which contains the primary dataset and for data analysis.
+&nbsp;
+
+![aaa](https://github.com/programweb/ID-compare-translate/assets/12736699/feed6d4c-2127-470d-9e25-262058b39f3f)
+&nbsp;
+
+I convert the SRR1614899_3.fastq file to a .fasta file:
+```BASH
+seqtk seq -A SRR1614899_3.fastq >  SRR1614899.fa
+```
+&nbsp;
+
+I made a database for this:
+&nbsp;
+
+![bbb](https://github.com/programweb/ID-compare-translate/assets/12736699/ed4a824d-252c-41f3-9bf0-3107c4e41724)
+&nbsp;
+
+![ccc](https://github.com/programweb/ID-compare-translate/assets/12736699/007f2901-a4c0-40f5-8ced-b178d890fd70)
+&nbsp;
+
+Now to align the converted sequence with blastn
+&nbsp;
+
+![ddd](https://github.com/programweb/ID-compare-translate/assets/12736699/ba7f901d-1f0b-4435-8268-72657371decd)
+&nbsp;
+
+The problem with this approach is it produces a huge file with > 87 million rows!
+Each sequence may contain hundreds if not thousands of hits to all other similar 16S genes. 
+Of course, since all 16S genes are similar to one another the resulting file is humongous. 
+Obviously, the method is extremely redundant. 
+Never-the-less, many publications do use blast to classify sequences.
+&nbsp;
+
+![eee](https://github.com/programweb/ID-compare-translate/assets/12736699/98862581-13d6-4d73-9de4-034a4bd66621)
+
+
+
+
+
+&nbsp;
+
+--- --- --- _I PLAN TO ADD STILL MORE TO THIS CODE SAMPLE IN THE NEAR FUTURE._ --- --- ---
 &nbsp;
 
 &nbsp;
