@@ -76,6 +76,12 @@ In Megan, we get to the Genus rank for all branches:
 <img width="755" alt="megan" src="https://github.com/programweb/ID-compare-translate/assets/12736699/8a88156f-831b-4286-a574-c8565b106c3d">
 &nbsp;
 
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
 **Map related genes across species**
 &nbsp;
 
