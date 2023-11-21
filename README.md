@@ -62,11 +62,19 @@ MEGAN can draw a taxonomical tree with the number of reads assigned to a rank.
 ![Megan6_2](https://github.com/programweb/ID-compare-translate/assets/12736699/8137dc97-356a-430b-b34d-3a3d3b091b11)
 &nbsp;
 
---- --- --- _I PLAN TO ADD STILL MORE TO THIS CODE SAMPLE IN THE NEAR FUTURE._ --- --- ---
+We didn't get down to the Genus rank of classification in all of the above tree branches.  Using another approach, we use a RPD classifier which relies on the patterns in the sequences rather than alignments.  It is faster and produces smaller files than the blast method. The following command in the terminal will output an assign.txt file and a ranks.txt file.  The assign.txt file contains a taxonomical assignment for each input read and can be loaded up into Megan to visualize the results. The ranks.txt file contains the number of reads assigned to a taxonomical rank and the number of reads (count) assigned to that rank.
 &nbsp;
 
+```bash
+java -jar ~/src/RDPTools/classifier.jar classify SRR1614899_3.fastq -o assign.txt -h ranks.txt
+```
 &nbsp;
 
+In Megan, we get to the Genus rank for all branches:
+&nbsp;
+
+<img width="755" alt="megan" src="https://github.com/programweb/ID-compare-translate/assets/12736699/8a88156f-831b-4286-a574-c8565b106c3d">
+&nbsp;
 
 **Map related genes across species**
 &nbsp;
