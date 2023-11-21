@@ -57,13 +57,9 @@ Never-the-less, many publications do use blast to classify sequences.
 
 Visualizing the 16S classification (SRR1614899.blastn 4.44 GB file which zips to 377 MB) with the Metagenome Analyzer (MEGAN).
 MEGAN can draw a taxonomical tree with the number of reads assigned to a rank.
-The classification stops at the Family level.
 &nbsp;
 
-![Megan6](https://github.com/programweb/ID-compare-translate/assets/12736699/34f349a5-b337-4461-8e43-6b0de3c9920a)
-
-
-
+![Megan6_2](https://github.com/programweb/ID-compare-translate/assets/12736699/8137dc97-356a-430b-b34d-3a3d3b091b11)
 &nbsp;
 
 --- --- --- _I PLAN TO ADD STILL MORE TO THIS CODE SAMPLE IN THE NEAR FUTURE._ --- --- ---
