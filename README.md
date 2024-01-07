@@ -1,4 +1,5 @@
-# ID-compare-translate
+# Taxonomic Classification
+## ID, Compare Translate
 
 
 Classifying species of microorganisms by their genetic material is a fast-growing subfield of bioinformatics.
